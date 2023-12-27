@@ -1,9 +1,5 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Home from './pages/Home';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Doctor from "./pages/Doctor";
@@ -13,8 +9,8 @@ import Feedback from "./pages/Feedback";
 import Blog from "./pages/Blog";
 import Footer from "./pages/Footer";
 import Err from "./pages/Err";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import Hospital from "./pages/Hospital";
 import Abouthos from "./pages/About_hos";
 import Docselect from "./componants/Docselect";
@@ -23,7 +19,9 @@ import Docprofile from "./pages/Docprofile";
 import Drreview from "./pages/Drreview";
 import Aboutdr from "./pages/Aboutdr";
 import Drarticle from "./pages/Drarticle";
-// import './all.min.css';
+import Book_Appointment from "./pages/Book_Appointment";
+import Patients_details from "./pages/Patients_details"
+import Clinic_Appointment from "./pages/Clinic_Appointment";
 
 function App() {
   return (
@@ -53,28 +51,37 @@ function App() {
             <Blog />
           </Route>
           <Route path="/hospital">
-            <Hospital/>
+            <Hospital />
           </Route>
           <Route path="/abouthos">
-            <Abouthos/>
+            <Abouthos />
           </Route>
           <Route path="/docselect">
-            <Docselect/>
+            <Docselect />
           </Route>
           <Route path="/review">
-            <Reiew/>
+            <Reiew />
           </Route>
           <Route path="/doctoreprofile">
-            <Docprofile/>
+            <Docprofile />
           </Route>
           <Route path="/aboutdoc">
-            <Aboutdr/>
+            <Aboutdr />
           </Route>
           <Route path="/drreview">
-            <Drreview/>
+            <Drreview />
           </Route>
           <Route path="/drarticle">
-            <Drarticle/>
+            <Drarticle />
+          </Route>
+          <Route exact path="/bookAppointment">
+            <Book_Appointment />
+          </Route>
+          <Route exact path="/clinicAppointment">
+            <Clinic_Appointment />
+          </Route>
+          <Route exact path="/patientsDetails">
+            <Patients_details />
           </Route>
           <Route path="/err">
             <Err />
