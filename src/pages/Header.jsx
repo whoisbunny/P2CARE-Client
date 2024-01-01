@@ -8,7 +8,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function Header() {
   return (
     <>
-      <header>
+      <header className=" ">
         <div className="w-100">
           <Container>
             <a href="mailto:" className="align-content-end">
@@ -17,33 +17,35 @@ function Header() {
             </a>
           </Container>
         </div>
-          <div className="d-flex justify-content-between">
-            <img
-              src="assets/img/logo2.png"
-              alt="logo"
-              width="163px"
-              height="90px"
-            />
-            <div className="contact align-content-center">
-              <div className="d-flex">
-                <div className="mail">
-                  <p>Send Us Mail</p>
-                  <a href="mailto:" className="text-dark">
-                    <IoIosMail />
-                    contact@xgenious.com
-                  </a>
-                </div>
-                <div className="contact_number ms-5">
-                  <p>Call To Us</p>
-                  <a href="tel:+" className="text-dark">
-                    <FaPhoneAlt />
-                    01234569872
-                  </a>
-                </div>
+
+        <div className="d-flex px-5 justify-content-between ">
+          <img
+            src="assets/img/logo2.png"
+            alt="logo"
+            width="163px"
+            height="90px"
+          />
+          <div className="contact align-content-center">
+            <div className="d-flex">
+              <div className="mail">
+                <p>Send Us Mail</p>
+                <a href="mailto:" className="text-dark">
+                  <IoIosMail />
+                  contact@xgenious.com
+                </a>
+              </div>
+              <div className="contact_number ms-5">
+                <p>Call To Us</p>
+                <a href="tel:+" className="text-dark">
+                  <FaPhoneAlt />
+                  01234569872
+                </a>
               </div>
             </div>
           </div>
-        <nav className="navbar container-fluid navbar-expand-lg bg-body-tertiary">
+        </div>
+        {/* <hr /> */}
+        <nav className="navbar container-fluid navbar-expand-lg bg-body-tertiary  ">
           <div className="container-fluid">
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">

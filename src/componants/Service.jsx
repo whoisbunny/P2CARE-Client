@@ -4,7 +4,7 @@ function Service(props) {
     return (
         <>
             <div className='box'>
-                <img src={props.img} className='spec_img' align="center" alt="img" width="80px" height="80px" srcset="" />
+                <img src={props.img} className='spec_img' align="center" alt="img" width="80px" height="80px" />
                 <div className='text-align-center'>
                     <h4 className='py-4 box_text'>{props.tag}</h4>
                     <p className='box_text'>{props.detail}</p>

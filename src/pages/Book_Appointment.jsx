@@ -10,7 +10,7 @@
           <div className="row">
             <div className="d-flex col-8 mx-2 my-2 border">
               <div className="mx-3 mt-3">
-                <img className="img-fluid col-1" src="#" alt="dr.picture" />
+                <img className="img-fluid col-1" src={''} alt="dr.picture" />
               </div>
               <div className="list-inline mt-3">
                 <h3 className="list-inline-item">Dr. John Doe </h3>
@@ -106,9 +106,9 @@
                 </button>
 
                 <div
-                  class="modal fade"
+                  class="modal fa0de"
                   id="exampleModal"
-                  tabindex="-1"
+                  tabIndex="-1"
                   aria-labelledby="exampleModalLabel"
                   aria-hidden="true"
                 >
@@ -118,6 +118,7 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">
                           Clinic Appointment
                         </h1>
+                        
                       </div>
                     </div>
                   </div>

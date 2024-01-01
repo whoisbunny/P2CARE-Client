@@ -7,6 +7,7 @@ import { FaAmbulance } from "react-icons/fa";
 // import Article from './Article';
 // import Reiew from './Reiew';
 import Abouthos from './About_hos'
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 // import Docselect from '../componants/Docselect';
 
 function Hospital() {
@@ -16,11 +17,11 @@ function Hospital() {
                 <div className='pageindi'>
                     <Container>
                         <div className='htha d-flex'>
-                            <a href='/' className='text-white fw-bold me-2'>Home</a>
+                            <Link to='/' className='text-white fw-bold me-2'>Home</Link>
                             <div className='text-white'>
                                 <FaChevronRight />
                             </div>
-                            <a href='/err' className='text-white fw-bold ms-2'>Shalby Hospital Mohali</a>
+                            <Link to='/err' className='text-white fw-bold ms-2'>Shalby Hospital Mohali</Link>
                         </div>
                     </Container>
                 </div>
@@ -49,10 +50,10 @@ function Hospital() {
                                     </div>
                                 </div>
                                 <div className="hsinfobox mt-5">
-                                    <a href="/abouthos" className='text-dark ms-5 fw-bold'>Overview</a>
-                                    <a href="/docselect" className='text-dark fw-bold'>Doctors</a>
-                                    <a href="/review" className='text-dark fw-bold'>Reviews</a>
-                                    <a href="/Articles" className='text-dark fw-bold'>Articles</a>
+                                    <Link to="/abouthos" className='text-dark ms-5 fw-bold'>Overview</Link>
+                                    <Link to="/docselect" className='text-dark fw-bold'>Doctors</Link>
+                                    <Link to="/review" className='text-dark fw-bold'>Reviews</Link>
+                                    <Link to="/Articles" className='text-dark fw-bold'>Articles</Link>
                                 </div>
                             </div>
                             <div className='ms-5'>
